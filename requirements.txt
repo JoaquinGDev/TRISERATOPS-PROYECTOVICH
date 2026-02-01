@@ -1,4 +1,4 @@
 flask
 flask-sqlalchemy
-
-martes, miercoles, viernes, sabdo
+flask-login
+gunicorn

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="logo">
+            <h1>Sistema PyME</h1>
+            <p>Gestión Integral para tu Negocio man</p>
+        </div>
+
+    </div>
+
+    <div class="card">
+
+         <div class="inicio_registrarse">
+             <button class="ini-sesion">Iniciar Sesión</button>
+              <button class="registrarse">Registrarse</button>
+        </div>
+            
+        <form action="/verificar" method="POST">
+
+            <label>Email</label>
+            <div class="input-email">
+                <span class="input-icon">✉️</span>
+                <input type="text" name="usuario" placeholder="tu@email.com" required>
+            </div>
+
+            <label>Contraseña</label>
+            <div class="input-password">
+                <span class="input-icon">🔒</span>
+                <input type="password" name="password" placeholder="**********" required>
+            </div>
+            
+            <button type="submit" class="btn">Iniciar Sesión</button>
+        </form>
+
+        <div class="test-usuarios">
+            <strong>Usuarios de prueba:</strong>
+            <p><b>Admin:</b> admin / 123</p>
+            <p><b>Cliente:</b> cliente / 123</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
